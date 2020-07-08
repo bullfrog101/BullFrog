@@ -15,11 +15,11 @@ BullFrog provides comprehensive support for three major types of schema migratio
 
 Three main types of schema migrations in the experiments:
 
-- Table split migration
+- Table split migration [[Branch]](https://github.com/bullfrog101/BullFrog)
 
-- Aggregate migration
+- Aggregate migration [[Branch]](https://github.com/bullfrog101/BullFrog/tree/migrate-aggregation-on-hashtable)
 
-- Join migration
+- Join migration [[Branch]](https://github.com/bullfrog101/BullFrog/tree/migrate-join-on-hashtable)
   
 ## TPC-C Benchmark
 
