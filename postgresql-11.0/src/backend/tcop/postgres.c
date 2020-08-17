@@ -901,6 +901,7 @@ static void post_query_tasks(void)
 				if (getmigratebit(PartialBitmap, lfirst_int(cell)))
 				{
 					size--;
+					list_delete_cell(InProgLocalList1, cell);
 				}
 			}
 		}
