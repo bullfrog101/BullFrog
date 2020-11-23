@@ -183,3 +183,22 @@ localagghashtable_ip_insert(uint32 k1, uint32 k2, uint32 k3, uint8 hval, uint8 i
 
 	hvalue->migrateByte = hval;
 }
+
+
+void
+localagghashtable_ip_delete(uint32 k1, uint32 k2, uint32 k3, uint8 id)
+{
+	LocalAggHashKey key;
+	LocalAggHashValue *hvalue;
+	bool found;
+
+	key.key1 = k1;
+	key.key2 = k2;
+	key.key3 = k3;
+
+	if (id == 0) {
+		hash_search(LocalIPAggHashTable0, (void *) &key, HASH_REMOVE, NULL);
+	} else {
+		hash_search(LocalIPAggHashTable1, (void *) &key, HASH_REMOVE, NULL);
+	}
+}

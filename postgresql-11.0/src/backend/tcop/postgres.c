@@ -928,6 +928,7 @@ post_query_tasks(void)
 					if (mByte == 1)
 					{
 						--count_inprogress;
+						localagghashtable_ip_delete(k1, k2, k3, mByte);
 					}
 				}
 				if (count_inprogress == 0)
