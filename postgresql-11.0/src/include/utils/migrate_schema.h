@@ -57,6 +57,7 @@ extern uint32 MigrateJoinHashCode(MigrateJoinHashKey *tagPtr);
 extern void InitLocalJoinHashTable(void);
 extern bool localjoinhashtable_lookup(uint32 k1, uint32 k2, uint32 k3, uint32 k4, uint32 k5, uint32 k6, uint8 *hval, uint8 id);
 extern void localjoinhashtable_insert(uint32 k1, uint32 k2, uint32 k3, uint32 k4, uint32 k5, uint32 k6, uint8 hval, uint8 id);
+extern void localjoinhashtable_delete(uint32 k1, uint32 k2, uint32 k3, uint32 k4, uint32 k5, uint32 k6, uint8 id);
 
 extern bool migratejoinhashtable_lookup(uint32 k1, uint32 k2, uint32 k3, uint32 k4, uint32 k5, uint32 k6,uint8 *hval);
 extern bool migratejoinhashtable_insert(uint32 k1, uint32 k2, uint32 k3, uint32 k4, uint32 k5, uint32 k6,uint8 *hval, bool setMigrate);
